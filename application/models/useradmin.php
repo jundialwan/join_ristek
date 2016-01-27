@@ -52,5 +52,19 @@ Class Useradmin extends CI_Model {
 		$result = $this->db->get('admin')->row();
 
 		return $result;
+	}
+
+	public function getPendaftarStats() {
+		$sql = 'select * from biodata where angkatan= ?';
+		$total = $this->db->get('biodata')->num_rows();
+		$total2013 = $this->db->query($sql, array('2013'))->num_rows();
+		$total2014 = $this->db->query($sql, array('2014'))->num_rows();
+		$total2015 = $this->db->query($sql, array('2015'))->num_rows();
+		$pendaftar_stats_arr = array(
+				'total' => $total,
+				'total2013' => $total2013,
+				'total2014' => $total2014,
+				'total2015' => $total2015
+			);
 	}	
 }

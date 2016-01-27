@@ -240,9 +240,9 @@
 			<div class="col-md-12">
 				<br>
 				Statistik pendaftar open recruitement Ristek Fasilkom UI tahun 2016
-
+				<br>
 				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">Statistik Umum Pendaftar</div>
+					<div class="panel-heading info-panel-heading">STATISTIK UMUM PENDAFTAR</div>
 					<div class="panel-body">
 						<div class="col-md-3">
 							<b>Total Pendaftar: </b>Orang							

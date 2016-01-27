@@ -39,6 +39,7 @@ Class Admin747835 extends MY_Controller {
 		$data['title'] = 'Admin Dashboard';		
 
 		$data['admindata'] = $admindata;
+		$data['stats'] = $this->useradmin->getPendaftarStats();
 		$data['pendaftar']	= $this->useradmin->getAllPendaftar($admindata->role);
 		$this->render('admin', $data);
 	}
