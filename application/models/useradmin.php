@@ -60,6 +60,10 @@ Class Useradmin extends CI_Model {
 		$total2013 = $this->db->query($sql, array('2013'))->num_rows();
 		$total2014 = $this->db->query($sql, array('2014'))->num_rows();
 		$total2015 = $this->db->query($sql, array('2015'))->num_rows();
+		$totalCP = $this->db->query('select * from pilihan where (sig1="cp" OR sig2="CP")')->num_rows();
+		$totalCPboth = $this->db->query('select * from pilihan where (sig1="cp" AND sig2="cp")')->num_rows();
+		$totalCPpil1 = $this->db->query('select * from pilihan where (sig1="cp" AND sig2<>"cp")')->num_rows();
+		$totalCPpil2 = $this->db->query('select * from pilihan where (sig2="cp" AND sig1<>"cp")')->num_rows();
 		$pendaftar_stats_arr = array(
 				'total' => $total,
 				'total2013' => $total2013,
