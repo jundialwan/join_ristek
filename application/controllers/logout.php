@@ -16,10 +16,20 @@ class Logout extends MY_Controller {
 			redirect(site_url());
 		} else {
 			# unset session data
-			$this->session->userdata = array();
+			$this->unset_only();
 
 			# logout SSO
 			SSO::logout();			
 		}
+	}
+
+	private function unset_only() {
+	    $user_data = $this->session->all_userdata();
+
+	    foreach ($user_data as $key => $value) {
+	        if ($key != 'session_id' && $key != 'ip_address' && $key != 'user_agent' && $key != 'last_activity') {
+	            $this->session->unset_userdata($key);
+	        }
+	    }
 	}
 }
