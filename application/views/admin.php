@@ -1,8 +1,8 @@
 <div class="row">
-	<div class="nav nav-tabs">
+	<ul class="nav nav-tabs">
 		<li class="active"><a class="ristek-color" data-toggle="tab" href="#pendaftar">PENDAFTAR</a></li>
 	  	<li><a class="ristek-color" data-toggle="tab" href="#statistik">STATISTIK</a></li>
-	</div>
+	</ul>
 
 	<div class="tab-content">
 		<div id="pendaftar" class="tab-pane in active">
