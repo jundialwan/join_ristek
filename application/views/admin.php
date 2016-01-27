@@ -237,7 +237,10 @@
 			</div>			
 		</div>
 		<div id="statistik" class="tab-pane">
-			
+			<div class="col-md-12">
+				<br>
+				Statistik pendaftar open recruitement Ristek Fasilkom UI tahun 2016
+			</div>
 		</div>
 	</div>
 
