@@ -55,8 +55,15 @@ Class Register extends MY_Controller {
 						$this->form_validation->set_message('required', '%s is required');
 						$this->form_validation->set_error_delimiters('<p class="text-danger">', '</p>');
 
+						$sig_arr = array('cp', 'ds', 'es', 'ns', 'gd', 'md', 'ux', 'wb', 'pr', 'hr');
+
 						# run form validation
 						if (!($this->form_validation->run())) {
+							# if form input invalid							
+							# get back to form													
+							$data['title'] = 'Registration Form';
+							$this->render('form', $data);
+						} else if (in_array($this->input->post('sig1_input'), $sig_arr) | in_array($this->input->post('sig2_input'), $sig_arr)) {
 							# if form input invalid							
 							# get back to form													
 							$data['title'] = 'Registration Form';
