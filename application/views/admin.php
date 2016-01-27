@@ -240,6 +240,24 @@
 			<div class="col-md-12">
 				<br>
 				Statistik pendaftar open recruitement Ristek Fasilkom UI tahun 2016
+
+				<div class="panel panel-primary info-panel">
+					<div class="panel-heading info-panel-heading">Statistik Umum Pendaftar</div>
+					<div class="panel-body">
+						<div class="col-md-3">
+							<b>Total Pendaftar: </b>Orang							
+						</div>
+						<div class="col-md-3">
+							<b>2013: </b>Orang
+						</div>
+						<div class="col-md-3">
+							<b>2014: </b>Orang
+						</div>
+						<div class="col-md-3">
+							<b>2015: </b>Orang
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
