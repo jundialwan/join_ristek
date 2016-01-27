@@ -8,7 +8,7 @@
 		 	<div class="panel-heading info-panel-heading">Pendaftar</div>
 		 	<div class="panel-body">
 		 		<p>
-		 			<span class="text-success"><b>HIJAU</b></span>: Pendaftar sudah memenuhi <br>
+		 			<span class="text-primary"><b>BIRU</b></span>: Pendaftar sudah memenuhi <br>
 		 			<span class="text-danger"><b>MERAH</b></span>: Pendaftar belum memenuhi <br>
 		 			<span class="text-muted"><b>ABU</b></span>: Pendaftar tidak perlu submit <br>
 		 			<p><b>Q1</b>: Status lolos Pilihan 1, <b>Q2</b>: Status lolos Pilihan 2, <b>E</b>: Status Essay, <b>R:</b> Status Resume, <B>T1</b>: Status Tugas 1, <b>T2</b>: Status Tugas 2</p> 
@@ -27,25 +27,25 @@
 									<?php if ($p->sig2 == $p->sig1): ?>
 									<span class="text-muted pull-right"><b>T2 &nbsp;</b></span>
 									<?php elseif (($p->tugas2 != NULL)): ?>
-									<span class="text-success pull-right"><b>T2 &nbsp;</b></span>
+									<span class="text-primary pull-right"><b>T2 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>T2 &nbsp;</b></span>
 									<?php endif; ?>																			
 
 									<?php if (($p->tugas1 != NULL)): ?>
-									<span class="text-success pull-right"><b>T1 &nbsp;</b></span>
+									<span class="text-primary pull-right"><b>T1 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>T1 &nbsp;</b></span>
 									<?php endif; ?>
 
 									<?php if (($p->resume != NULL)): ?>
-									<span class="text-success pull-right"><b>R &nbsp;</b></span>
+									<span class="text-primary pull-right"><b>R &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>R &nbsp;</b></span>
 									<?php endif; ?>
 
 									<?php if (($p->essay != NULL)): ?>
-									<span class="text-success pull-right"><b>E &nbsp;</b></span>
+									<span class="text-primary pull-right"><b>E &nbsp;</b></span>
 									<?php else: ?>										
 									<span class="text-danger pull-right"><b>E &nbsp;</b></span>
 									<?php endif; ?>
@@ -54,13 +54,13 @@
 									<?php if ($p->sig2 == $p->sig1): ?>
 									<span class="text-muted pull-right"><b>Q2 &nbsp;</b></span>
 									<?php elseif (($p->isPil2Qualified != 0)): ?>
-									<span class="text-success pull-right"><b>Q2 &nbsp;</b></span>
+									<span class="text-primary pull-right"><b>Q2 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>Q2 &nbsp;</b></span>
 									<?php endif; ?>		
 
 									<?php if ($p->isPil1Qualified != 0): ?>
-									<span class="text-success pull-right"><b>Q1 &nbsp;</b></span>
+									<span class="text-primary pull-right"><b>Q1 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>Q1 &nbsp;</b></span>
 									<?php endif; ?>
