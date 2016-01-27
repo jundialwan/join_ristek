@@ -245,16 +245,16 @@
 					<div class="panel-heading info-panel-heading">STATISTIK UMUM PENDAFTAR</div>
 					<div class="panel-body">
 						<div class="col-md-3">
-							<b>Total Pendaftar: </b>Orang							
+							<b>Total Pendaftar: </b><?= $stats['total']?> Orang							
 						</div>
 						<div class="col-md-3">
-							<b>2013: </b>Orang
+							<b>2013: </b><?= $stats['total2013']?> Orang
 						</div>
 						<div class="col-md-3">
-							<b>2014: </b>Orang
+							<b>2014: </b><?= $stats['total2014']?> Orang
 						</div>
 						<div class="col-md-3">
-							<b>2015: </b>Orang
+							<b>2015: </b><?= $stats['total2015']?>  Orang
 						</div>
 					</div>
 				</div>
