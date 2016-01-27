@@ -55,7 +55,7 @@ Class Useradmin extends CI_Model {
 	}
 
 	public function getPendaftarStats() {
-		$sql = 'select * from biodata where angkatan= ?';
+		$sql = 'select * from biodata where angkatan= ? AND timestamp != NULL';
 		$total = $this->db->get('biodata')->num_rows();
 		$total2013 = $this->db->query($sql, array('2013'))->num_rows();
 		$total2014 = $this->db->query($sql, array('2014'))->num_rows();
