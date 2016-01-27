@@ -63,7 +63,7 @@ Class Register extends MY_Controller {
 							# get back to form													
 							$data['title'] = 'Registration Form';
 							$this->render('form', $data);
-						} else if (in_array($this->input->post('sig1_input'), $sig_arr) | in_array($this->input->post('sig2_input'), $sig_arr)) {
+						} else if (!(in_array($this->input->post('sig1_input'), $sig_arr)) | !(in_array($this->input->post('sig2_input'), $sig_arr))) {
 							# if form input invalid							
 							# get back to form													
 							$data['title'] = 'Registration Form';
