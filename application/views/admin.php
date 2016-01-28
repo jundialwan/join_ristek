@@ -258,6 +258,24 @@
 						</div>
 					</div>
 				</div>
+				<br><br>
+				<div class="panel panel-primary info-panel">
+					<div class="panel-heading info-panel-heading">STATISTIK COMPETITIVE PROGRAMMING</div>
+					<div class="panel-body">
+						<div class="col-md-3">
+							<b>Total Pendaftar: </b><?= $stats['totalCP']?> Orang							
+						</div>
+						<div class="col-md-3">
+							<b>Both: </b><?= $stats['totalCPboth']?> Orang
+						</div>
+						<div class="col-md-3">
+							<b>Hanya Pil. 1: </b><?= $stats['totalCPpil1']?> Orang
+						</div>
+						<div class="col-md-3">
+							<b>Hanya Pil. 2: </b><?= $stats['totalCPpil2']?>  Orang
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
