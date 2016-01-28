@@ -240,24 +240,26 @@
 			<br>
 			<p>Statistik pendaftar open recruitement Ristek Fasilkom UI tahun 2016</p>
 			<br>
-			<div class="col-md-12">
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK UMUM PENDAFTAR</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['total']?> Orang							
-						</div>
-						<div class="col-md-3">
-							<b>2013: </b><?= $stats['total2013']?> Orang
-						</div>
-						<div class="col-md-3">
-							<b>2014: </b><?= $stats['total2014']?> Orang
-						</div>
-						<div class="col-md-3">
-							<b>2015: </b><?= $stats['total2015']?>  Orang
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK UMUM PENDAFTAR</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><br><?= $stats['total']?> Orang							
+							</div>
+							<div class="col-md-3">
+								<b>2013: </b><br><?= $stats['total2013']?> Orang
+							</div>
+							<div class="col-md-3">
+								<b>2014: </b><br><?= $stats['total2014']?> Orang
+							</div>
+							<div class="col-md-3">
+								<b>2015: </b><br><?= $stats['total2015']?>  Orang
+							</div>
 						</div>
 					</div>
-				</div>
+				</div>				
 			</div>
 			<div class="row">
 				<div class="col-md-6">
@@ -265,16 +267,16 @@
 						<div class="panel-heading info-panel-heading">STATISTIK COMPETITIVE PROGRAMMING</div>
 						<div class="panel-body">
 							<div class="col-md-3">
-								<b>Total Pendaftar: </b><?= $stats['totalCP']?> Orang							
+								<b>Total Pendaftar: </b><br><?= $stats['totalCP']?> Orang							
 							</div><br>
 							<div class="col-md-3">
-								<b>Both: </b><?= $stats['totalCPboth']?> Orang
+								<b>Both: </b><br><?= $stats['totalCPboth']?> Orang
 							</div><br>
 							<div class="col-md-3">
-								<b>Hanya Pil. 1: </b><?= $stats['totalCPpil1']?> Orang
+								<b>Hanya Pil. 1: </b><br><?= $stats['totalCPpil1']?> Orang
 							</div><br>
 							<div class="col-md-3">
-								<b>Hanya Pil. 2: </b><?= $stats['totalCPpil2']?>  Orang
+								<b>Hanya Pil. 2: </b><br><?= $stats['totalCPpil2']?>  Orang
 							</div><br>
 						</div>
 					</div>					
