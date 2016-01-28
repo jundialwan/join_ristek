@@ -258,7 +258,7 @@
 						</div>
 					</div>
 				</div>
-				<br><br>
+				<br>
 				<div class="panel panel-primary info-panel">
 					<div class="panel-heading info-panel-heading">STATISTIK COMPETITIVE PROGRAMMING</div>
 					<div class="panel-body">

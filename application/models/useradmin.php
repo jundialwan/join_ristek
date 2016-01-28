@@ -68,7 +68,11 @@ Class Useradmin extends CI_Model {
 				'total' => $total,
 				'total2013' => $total2013,
 				'total2014' => $total2014,
-				'total2015' => $total2015
+				'total2015' => $total2015,
+				'totalCP' => $totalCP,
+				'totalCPboth' => $totalCPboth,
+				'totalCPpil1' => $totalCPpil1,
+				'totalCPpil2' => $totalCPpil2
 			);
 
 		return $pendaftar_stats_arr;
