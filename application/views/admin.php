@@ -237,208 +237,228 @@
 			</div>			
 		</div>
 		<div id="statistik" class="tab-pane">
+			<br>
+			<p>Statistik pendaftar open recruitement Ristek Fasilkom UI tahun 2016</p>
+			<br>
 			<div class="col-md-12">
-				<br>
-				<p>Statistik pendaftar open recruitement Ristek Fasilkom UI tahun 2016</p>
-				<br>
 				<div class="panel panel-primary info-panel">
 					<div class="panel-heading info-panel-heading">STATISTIK UMUM PENDAFTAR</div>
 					<div class="panel-body">
 						<div class="col-md-3">
 							<b>Total Pendaftar: </b><?= $stats['total']?> Orang							
-						</div><br>
+						</div>
 						<div class="col-md-3">
 							<b>2013: </b><?= $stats['total2013']?> Orang
-						</div><br>
+						</div>
 						<div class="col-md-3">
 							<b>2014: </b><?= $stats['total2014']?> Orang
-						</div><br>
+						</div>
 						<div class="col-md-3">
 							<b>2015: </b><?= $stats['total2015']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK COMPETITIVE PROGRAMMING</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalCP']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalCPboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalCPpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalCPpil2']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK DATA SCIENCE</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalDS']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalDSboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalDSpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalDSpil2']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK EMBEDDED SYSTEM</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalES']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalESboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalESpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalESpil2']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK NETWORK SECURITY AND OPERATING SYSTEM</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalNS']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalNSboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalNSpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalNSpil2']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK GAME DEVELOPMENT</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalGD']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalGDboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalGDpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalGDpil2']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK MOBILE APPLICATION DEVELOPMENT</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalMD']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalMDboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalMDpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalMDpil2']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK UI/UX</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalUX']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalUXboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalUXpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalUXpil2']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK WEB DEVELOPMENT</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalWB']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalWBboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalWBpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalWBpil2']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK HUMAN RESOURCES MANAGEMENT</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalHR']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalHRboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalHRpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalHRpil2']?>  Orang
-						</div><br>
-					</div>
-				</div>
-				<br>
-				<div class="panel panel-primary info-panel">
-					<div class="panel-heading info-panel-heading">STATISTIK PUBLIC RELATION</div>
-					<div class="panel-body">
-						<div class="col-md-3">
-							<b>Total Pendaftar: </b><?= $stats['totalPR']?> Orang							
-						</div><br>
-						<div class="col-md-3">
-							<b>Both: </b><?= $stats['totalPRboth']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 1: </b><?= $stats['totalPRpil1']?> Orang
-						</div><br>
-						<div class="col-md-3">
-							<b>Hanya Pil. 2: </b><?= $stats['totalPRpil2']?>  Orang
-						</div><br>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK COMPETITIVE PROGRAMMING</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalCP']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalCPboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalCPpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalCPpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK DATA SCIENCE</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalDS']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalDSboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalDSpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalDSpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK EMBEDDED SYSTEM</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalES']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalESboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalESpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalESpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK NETWORK SECURITY AND OPERATING SYSTEM</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalNS']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalNSboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalNSpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalNSpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK GAME DEVELOPMENT</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalGD']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalGDboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalGDpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalGDpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK MOBILE APPLICATION DEVELOPMENT</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalMD']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalMDboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalMDpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalMDpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK UI/UX</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalUX']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalUXboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalUXpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalUXpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK WEB DEVELOPMENT</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalWB']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalWBboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalWBpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalWBpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK HUMAN RESOURCES MANAGEMENT</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalHR']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalHRboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalHRpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalHRpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-primary info-panel">
+						<div class="panel-heading info-panel-heading">STATISTIK PUBLIC RELATION</div>
+						<div class="panel-body">
+							<div class="col-md-3">
+								<b>Total Pendaftar: </b><?= $stats['totalPR']?> Orang							
+							</div><br>
+							<div class="col-md-3">
+								<b>Both: </b><?= $stats['totalPRboth']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 1: </b><?= $stats['totalPRpil1']?> Orang
+							</div><br>
+							<div class="col-md-3">
+								<b>Hanya Pil. 2: </b><?= $stats['totalPRpil2']?>  Orang
+							</div><br>
+						</div>
+					</div>					
+				</div>
+			</div>																																								
 		</div>
 	</div>
 
