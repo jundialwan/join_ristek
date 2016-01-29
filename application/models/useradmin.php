@@ -73,46 +73,73 @@ Class Useradmin extends CI_Model {
 		$totalDSboth = $this->db->query('select * from pilihan where (sig1="ds" AND sig2="ds")')->num_rows();
 		$totalDSpil1 = $this->db->query('select * from pilihan where (sig1="ds" AND sig2<>"ds")')->num_rows();
 		$totalDSpil2 = $this->db->query('select * from pilihan where (sig2="ds" AND sig1<>"ds")')->num_rows();
+		$totalDS2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="ds" OR p.sig2="ds") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
+		$totalDS2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="ds" OR p.sig2="ds") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalDS2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="ds" OR p.sig2="ds") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();	
 
 		$totalES = $this->db->query('select * from pilihan where (sig1="es" OR sig2="es")')->num_rows();
 		$totalESboth = $this->db->query('select * from pilihan where (sig1="es" AND sig2="es")')->num_rows();
 		$totalESpil1 = $this->db->query('select * from pilihan where (sig1="es" AND sig2<>"es")')->num_rows();
 		$totalESpil2 = $this->db->query('select * from pilihan where (sig2="es" AND sig1<>"es")')->num_rows();
+		$totalES2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="es" OR p.sig2="es") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
+		$totalES2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="es" OR p.sig2="es") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalES2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="es" OR p.sig2="es") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();	
 
 		$totalNS = $this->db->query('select * from pilihan where (sig1="ns" OR sig2="ns")')->num_rows();
 		$totalNSboth = $this->db->query('select * from pilihan where (sig1="ns" AND sig2="ns")')->num_rows();
 		$totalNSpil1 = $this->db->query('select * from pilihan where (sig1="ns" AND sig2<>"ns")')->num_rows();
 		$totalNSpil2 = $this->db->query('select * from pilihan where (sig2="ns" AND sig1<>"ns")')->num_rows();
+		$totalNS2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="ns" OR p.sig2="ns") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
+		$totalNS2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="ns" OR p.sig2="ns") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalNS2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="ns" OR p.sig2="ns") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();	
 
 		$totalGD = $this->db->query('select * from pilihan where (sig1="gd" OR sig2="gd")')->num_rows();
 		$totalGDboth = $this->db->query('select * from pilihan where (sig1="gd" AND sig2="gd")')->num_rows();
 		$totalGDpil1 = $this->db->query('select * from pilihan where (sig1="gd" AND sig2<>"gd")')->num_rows();
 		$totalGDpil2 = $this->db->query('select * from pilihan where (sig2="gd" AND sig1<>"gd")')->num_rows();
+		$totalGD2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="gd" OR p.sig2="gd") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
+		$totalGD2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="gd" OR p.sig2="gd") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalGD2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="gd" OR p.sig2="gd") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();	
 
 		$totalMD = $this->db->query('select * from pilihan where (sig1="md" OR sig2="md")')->num_rows();
 		$totalMDboth = $this->db->query('select * from pilihan where (sig1="md" AND sig2="md")')->num_rows();
 		$totalMDpil1 = $this->db->query('select * from pilihan where (sig1="md" AND sig2<>"md")')->num_rows();
 		$totalMDpil2 = $this->db->query('select * from pilihan where (sig2="md" AND sig1<>"md")')->num_rows();
+		$totalMD2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="md" OR p.sig2="md") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
+		$totalMD2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="md" OR p.sig2="md") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalMD2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="md" OR p.sig2="md") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();	
 
 		$totalUX = $this->db->query('select * from pilihan where (sig1="ux" OR sig2="ux")')->num_rows();
 		$totalUXboth = $this->db->query('select * from pilihan where (sig1="ux" AND sig2="ux")')->num_rows();
 		$totalUXpil1 = $this->db->query('select * from pilihan where (sig1="ux" AND sig2<>"ux")')->num_rows();
 		$totalUXpil2 = $this->db->query('select * from pilihan where (sig2="ux" AND sig1<>"ux")')->num_rows();
+		$totalUX2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="ux" OR p.sig2="ux") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
+		$totalUX2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="ux" OR p.sig2="ux") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalUX2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="ux" OR p.sig2="ux") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();	
 
 		$totalWB = $this->db->query('select * from pilihan where (sig1="wb" OR sig2="wb")')->num_rows();
 		$totalWBboth = $this->db->query('select * from pilihan where (sig1="wb" AND sig2="wb")')->num_rows();
 		$totalWBpil1 = $this->db->query('select * from pilihan where (sig1="wb" AND sig2<>"wb")')->num_rows();
 		$totalWBpil2 = $this->db->query('select * from pilihan where (sig2="wb" AND sig1<>"wb")')->num_rows();
+		$totalWB2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="wb" OR p.sig2="wb") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
+		$totalWB2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="wb" OR p.sig2="wb") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalWB2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="wb" OR p.sig2="wb") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();	
 
 		$totalHR = $this->db->query('select * from pilihan where (sig1="hr" OR sig2="hr")')->num_rows();
 		$totalHRboth = $this->db->query('select * from pilihan where (sig1="hr" AND sig2="hr")')->num_rows();
 		$totalHRpil1 = $this->db->query('select * from pilihan where (sig1="hr" AND sig2<>"hr")')->num_rows();
 		$totalHRpil2 = $this->db->query('select * from pilihan where (sig2="hr" AND sig1<>"hr")')->num_rows();
+		$totalHR2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="hr" OR p.sig2="hr") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
+		$totalHR2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="hr" OR p.sig2="hr") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalHR2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="hr" OR p.sig2="hr") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();	
 
 		$totalPR = $this->db->query('select * from pilihan where (sig1="pr" OR sig2="pr")')->num_rows();
 		$totalPRboth = $this->db->query('select * from pilihan where (sig1="pr" AND sig2="pr")')->num_rows();
 		$totalPRpil1 = $this->db->query('select * from pilihan where (sig1="pr" AND sig2<>"pr")')->num_rows();
 		$totalPRpil2 = $this->db->query('select * from pilihan where (sig2="pr" AND sig1<>"pr")')->num_rows();
+		$totalPR2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="pr" OR p.sig2="pr") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
+		$totalPR2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="pr" OR p.sig2="pr") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalPR2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="pr" OR p.sig2="pr") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();	
 
 		$pendaftar_stats_arr = array(
 				'total' => $total,
@@ -125,8 +152,8 @@ Class Useradmin extends CI_Model {
 				'totalCPpil1' => $totalCPpil1,
 				'totalCPpil2' => $totalCPpil2,
 				'totalCP2013' => $totalCP2013,
-				// 'totalCP2014' => $totalCP2014,
-				// 'totalCP2015' => $totalCP2015,
+				'totalCP2014' => $totalCP2014,
+				'totalCP2015' => $totalCP2015,
 
 				'totalDS' => $totalDS,
 				'totalDSboth' => $totalDSboth,
