@@ -288,10 +288,10 @@
 										<b>2013: </b><br><?= $stats['totalCP2013']?> Orang
 									</div>
 									<div class="col-md-3">
-										<b>2014: </b><br> Orang
+										<b>2014: </b><br><?= $stats['totalCP2014']?> Orang
 									</div>
 									<div class="col-md-3">
-										<b>2015: </b><br>  Orang
+										<b>2015: </b><br><?= $stats['totalCP2015']?>  Orang
 									</div>	
 								</div>
 							</div>

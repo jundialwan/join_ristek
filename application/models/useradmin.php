@@ -66,8 +66,8 @@ Class Useradmin extends CI_Model {
 		$totalCPpil1 = $this->db->query('select * from pilihan where (sig1="cp" AND sig2<>"cp")')->num_rows();
 		$totalCPpil2 = $this->db->query('select * from pilihan where (sig2="cp" AND sig1<>"cp")')->num_rows();
 		$totalCP2013 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="cp" OR p.sig2="cp") AND b.angkatan="2013" AND p.username=b.username)')->num_rows();
-		// $totalCP2014 = $this->db->query('select * from pilihan where ((sig1="cp" OR sig2="cp") AND angkatan="2014")')->num_rows();
-		// $totalCP2015 = $this->db->query('select * from pilihan where ((sig1="cp" OR sig2="cp") AND angkatan="2015")')->num_rows();
+		$totalCP2014 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="cp" OR p.sig2="cp") AND b.angkatan="2014" AND p.username=b.username)')->num_rows();
+		$totalCP2015 = $this->db->query('select * from pilihan p, biodata b where ((p.sig1="cp" OR p.sig2="cp") AND b.angkatan="2015" AND p.username=b.username)')->num_rows();		
 
 		$totalDS = $this->db->query('select * from pilihan where (sig1="ds" OR sig2="ds")')->num_rows();
 		$totalDSboth = $this->db->query('select * from pilihan where (sig1="ds" AND sig2="ds")')->num_rows();
