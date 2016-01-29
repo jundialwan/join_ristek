@@ -65,9 +65,9 @@ Class Useradmin extends CI_Model {
 		$totalCPboth = $this->db->query('select * from pilihan where (sig1="cp" AND sig2="cp")')->num_rows();
 		$totalCPpil1 = $this->db->query('select * from pilihan where (sig1="cp" AND sig2<>"cp")')->num_rows();
 		$totalCPpil2 = $this->db->query('select * from pilihan where (sig2="cp" AND sig1<>"cp")')->num_rows();
-		$totalCP2013 = $this->db->query('select * from pilihan where ((sig1="cp" OR sig2="cp") AND angkatan="2013")')->num_rows();
-		$totalCP2014 = $this->db->query('select * from pilihan where ((sig1="cp" OR sig2="cp") AND angkatan="2014")')->num_rows();
-		$totalCP2015 = $this->db->query('select * from pilihan where ((sig1="cp" OR sig2="cp") AND angkatan="2015")')->num_rows();
+		// $totalCP2013 = $this->db->query('select * from pilihan where ((sig1="cp" OR sig2="cp") AND angkatan="2013")')->num_rows();
+		// $totalCP2014 = $this->db->query('select * from pilihan where ((sig1="cp" OR sig2="cp") AND angkatan="2014")')->num_rows();
+		// $totalCP2015 = $this->db->query('select * from pilihan where ((sig1="cp" OR sig2="cp") AND angkatan="2015")')->num_rows();
 
 		$totalDS = $this->db->query('select * from pilihan where (sig1="ds" OR sig2="ds")')->num_rows();
 		$totalDSboth = $this->db->query('select * from pilihan where (sig1="ds" AND sig2="ds")')->num_rows();
@@ -124,9 +124,9 @@ Class Useradmin extends CI_Model {
 				'totalCPboth' => $totalCPboth,
 				'totalCPpil1' => $totalCPpil1,
 				'totalCPpil2' => $totalCPpil2,
-				'totalCP2013' => $totalCP2013,
-				'totalCP2014' => $totalCP2014,
-				'totalCP2015' => $totalCP2015,
+				// 'totalCP2013' => $totalCP2013,
+				// 'totalCP2014' => $totalCP2014,
+				// 'totalCP2015' => $totalCP2015,
 
 				'totalDS' => $totalDS,
 				'totalDSboth' => $totalDSboth,
