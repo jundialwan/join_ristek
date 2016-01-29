@@ -83,9 +83,9 @@ Class Register extends MY_Controller {
 							# submit update pilihan
 							$pilihan_arr = array(
 									'sig1' => $this->input->post('sig1_input'),
-									'alasan1' => $this->input->post('alasan1_input'),
+									'alasan1' => $this->direction_check($this->input->post('alasan1_input')),
 									'sig2' => $this->input->post('sig2_input'),
-									'alasan2' => $this->input->post('alasan2_input'),
+									'alasan2' => $this->direction_check($this->input->post('alasan2_input')),
 								);
 							$this->pilihan->update($user['username'], $pilihan_arr);
 
@@ -108,7 +108,9 @@ Class Register extends MY_Controller {
 
 	private function direction_check($str)
 	{
-	    return strip_tags($str); 
+		$r = remove_invisible_characters($str);
+		$r = html_escape($r);
+	    return strip_tags($r); 
 	}
 
 
