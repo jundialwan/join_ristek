@@ -282,7 +282,7 @@
 									<div class="col-md-3">
 										<b>Hanya Pil. 2: </b><br><?= $stats['totalCPpil2']?>  Orang
 									</div>									
-								</div>
+								</div><br>
 								<div class="row">
 									<div class="col-md-3">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
@@ -314,7 +314,7 @@
 									<div class="col-md-3">
 										<b>Hanya Pil. 2: </b><br><?= $stats['totalDSpil2']?>  Orang
 									</div>									
-								</div>
+								</div><br>
 								<div class="row">
 									<div class="col-md-3">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
@@ -348,7 +348,7 @@
 									<div class="col-md-3">
 										<b>Hanya Pil. 2: </b><br><?= $stats['totalESpil2']?>  Orang
 									</div>									
-								</div>
+								</div><br>
 								<div class="row">
 									<div class="col-md-3">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
@@ -380,7 +380,7 @@
 									<div class="col-md-3">
 										<b>Hanya Pil. 2: </b><br><?= $stats['totalNSpil2']?>  Orang
 									</div>									
-								</div>
+								</div><br>
 								<div class="row">
 									<div class="col-md-3">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
@@ -414,7 +414,7 @@
 									<div class="col-md-3">
 										<b>Hanya Pil. 2: </b><br><?= $stats['totalGDpil2']?>  Orang
 									</div>									
-								</div>
+								</div><br>
 								<div class="row">
 									<div class="col-md-3">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
@@ -446,7 +446,7 @@
 									<div class="col-md-3">
 										<b>Hanya Pil. 2: </b><br><?= $stats['totalMDpil2']?>  Orang
 									</div>									
-								</div>
+								</div><br>
 								<div class="row">
 									<div class="col-md-3">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
@@ -480,7 +480,7 @@
 									<div class="col-md-3">
 										<b>Hanya Pil. 2: </b><br><?= $stats['totalUXpil2']?>  Orang
 									</div>									
-								</div>
+								</div><br>
 								<div class="row">
 									<div class="col-md-3">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
@@ -512,7 +512,7 @@
 									<div class="col-md-3">
 										<b>Hanya Pil. 2: </b><br><?= $stats['totalWBpil2']?>  Orang
 									</div>									
-								</div>
+								</div><br>
 								<div class="row">
 									<div class="col-md-3">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
@@ -546,7 +546,7 @@
 									<div class="col-md-3">
 										<b>Hanya Pil. 2: </b><br><?= $stats['totalHRpil2']?>  Orang
 									</div>									
-								</div>
+								</div><br>
 								<div class="row">
 									<div class="col-md-3">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
@@ -565,17 +565,30 @@
 						<div class="panel panel-primary info-panel">
 							<div class="panel-heading info-panel-heading">STATISTIK PUBLIC RELATION</div>
 							<div class="panel-body">
-								<div class="col-md-3">
-									<b>Total: </b><br><?= $stats['totalPR']?> Orang							
-								</div>
-								<div class="col-md-3">
-									<b>Both: </b><br><?= $stats['totalPRboth']?> Orang
-								</div>
-								<div class="col-md-3">
-									<b>Hanya Pil. 1: </b><br><?= $stats['totalPRpil1']?> Orang
-								</div>
-								<div class="col-md-3">
-									<b>Hanya Pil. 2: </b><br><?= $stats['totalPRpil2']?>  Orang
+								<div class="row">
+									<div class="col-md-3">
+										<b>Total: </b><br><?= $stats['totalPR']?> Orang							
+									</div>
+									<div class="col-md-3">
+										<b>Both: </b><br><?= $stats['totalPRboth']?> Orang
+									</div>
+									<div class="col-md-3">
+										<b>Hanya Pil. 1: </b><br><?= $stats['totalPRpil1']?> Orang
+									</div>
+									<div class="col-md-3">
+										<b>Hanya Pil. 2: </b><br><?= $stats['totalPRpil2']?>  Orang
+									</div>								
+								</div><br>
+								<div class="row">
+									<div class="col-md-3">
+										<b>2013: </b><br><?= $stats['total2013']?> Orang
+									</div>
+									<div class="col-md-3">
+										<b>2014: </b><br><?= $stats['total2014']?> Orang
+									</div>
+									<div class="col-md-3">
+										<b>2015: </b><br><?= $stats['total2015']?>  Orang
+									</div>	
 								</div>
 							</div>
 						</div>					
