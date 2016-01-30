@@ -61,6 +61,9 @@ Class Useradmin extends CI_Model {
 		$total2014 = $this->db->query($sql, array('2014'))->num_rows();
 		$total2015 = $this->db->query($sql, array('2015'))->num_rows();
 
+		$totalIlkom = $this->db->query('select * from biodata where jurusan like "Ilmu%"');
+		$totalSI = $this->db->query('select * from biodata where jurusan like "Sis%"');
+
 		$totalCP = $this->db->query('select * from pilihan where (sig1="cp" OR sig2="cp")')->num_rows();
 		$totalCPboth = $this->db->query('select * from pilihan where (sig1="cp" AND sig2="cp")')->num_rows();
 		$totalCPpil1 = $this->db->query('select * from pilihan where (sig1="cp" AND sig2<>"cp")')->num_rows();
@@ -146,6 +149,8 @@ Class Useradmin extends CI_Model {
 				'total2013' => $total2013,
 				'total2014' => $total2014,
 				'total2015' => $total2015,
+				'totalIlkom' => $totalIlkom,
+				'totalSI' => $totalSI,
 
 				'totalCP' => $totalCP,				
 				'totalCPboth' => $totalCPboth,

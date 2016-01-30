@@ -248,17 +248,23 @@
 							<div class="panel-body">
 								<div class="row">
 									<div class="col-md-3">
-										<span class="label label-primary"><b>Total: </b><br><?= $stats['total']?> Orang</span>
+										<b>Total: </b><br><span class="label label-primary"><?= $stats['total']?> Orang</span>
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-1">
 										<b>2013: </b><br><?= $stats['total2013']?> Orang
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-1">
 										<b>2014: </b><br><?= $stats['total2014']?> Orang
 									</div>
-									<div class="col-md-3">
-										<b>2015: </b><br><?= $stats['total2015']?>  Orang
+									<div class="col-md-1">
+										<b>2015: </b><br><?= $stats['total2015']?> Orang
 									</div>									
+									<div class="col-md-3">
+										<b>Ilmu Komputer: </b><br><?= $stats['totalIlkom']?> Orang
+									</div>
+									<div class="col-md-3">
+										<b>Sistem Informasi: </b><br><?= $stats['totalSI']?> Orang
+									</div>
 								</div>														
 							</div>
 						</div>
@@ -271,7 +277,7 @@
 							<div class="panel-body">
 								<div class="row">
 									<div class="col-md-3">
-										<span class="label label-primary"><b>Total: </b><br><?= $stats['totalCP']?> Orang</span>						
+										<b>Total: </b><br><span class="label label-primary"><?= $stats['totalCP']?> Orang</span>						
 									</div>
 									<div class="col-md-3">
 										<b>Both: </b><br><?= $stats['totalCPboth']?> Orang
@@ -303,7 +309,7 @@
 							<div class="panel-body">
 								<div class="row">
 									<div class="col-md-3">
-										<span class="label label-primary"><b>Total: </b><br><?= $stats['totalDS']?> Orang</span>							
+										<b>Total: </b><br><span class="label label-primary"><?= $stats['totalDS']?> Orang</span>							
 									</div>
 									<div class="col-md-3">
 										<b>Both: </b><br><?= $stats['totalDSboth']?> Orang
@@ -337,7 +343,7 @@
 							<div class="panel-body">
 								<div class="row">
 									<div class="col-md-3">
-										<span class="label label-primary"><b>Total: </b><br><?= $stats['totalES']?> Orang</span>							
+										<b>Total: </b><br><span class="label label-primary"><?= $stats['totalES']?> Orang</span>							
 									</div>
 									<div class="col-md-3">
 										<b>Both: </b><br><?= $stats['totalESboth']?> Orang
