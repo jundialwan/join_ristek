@@ -24,18 +24,7 @@ Class Ssologin extends MY_Controller {
 				'jurusan' 				=> $user->study_program,
 				'biohash'				=> $this->hashingBio($user->username, $user->npm)
 			);
-
-		// 2012-- & the other is not allowed, redirect to index
-		// if( 
-		// 	( 
-		// 		($userdata['angkatan'] != '2013') & ($userdata['angkatan'] != '2014') & ($userdata['angkatan'] != '2015') 
-		// 	) 
-		// 	| 
-		// 	($user->faculty != 'ILMU KOMPUTER') 
-		// ) 
-		// {
-		// 	redirect(site_url());
-		// }
+		
 		if( (($userdata['angkatan'] != '2013') & ($userdata['angkatan'] != '2014') & ($userdata['angkatan'] != '2015')) | ($user->faculty != 'ILMU KOMPUTER')) {
 			redirect(site_url());
 		}
