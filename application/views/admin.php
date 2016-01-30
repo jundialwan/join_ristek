@@ -247,7 +247,7 @@
 							<div class="panel-heading info-panel-heading">STATISTIK UMUM PENDAFTAR</div>
 							<div class="panel-body">
 								<div class="row">
-									<div class="col-md-3">
+									<div class="col-md-1">
 										<b>Total: </b><br><span class="label label-primary"><?= $stats['total']?> Orang</span>
 									</div>
 									<div class="col-md-1">
@@ -259,10 +259,10 @@
 									<div class="col-md-1">
 										<b>2015: </b><br><?= $stats['total2015']?> Orang
 									</div>									
-									<div class="col-md-3">
+									<div class="col-md-2">
 										<b>Ilmu Komputer: </b><br><?= $stats['totalIlkom']?> Orang
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-2">
 										<b>Sistem Informasi: </b><br><?= $stats['totalSI']?> Orang
 									</div>
 								</div>														
