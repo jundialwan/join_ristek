@@ -5,8 +5,6 @@ require_once(__DIR__.'/../../vendor/SSO/SSO/SSO.php');
 use SSO\SSO;
 SSO::setCASPath(__DIR__.'/../../vendor/CAS/CAS.php');
 
-// require 'http://ristek.cs.ui.ac.id/sso-api/vendor/autoload.php'
-
 Class Ssologin extends MY_Controller {
 	
 	public function __construct() {
@@ -28,9 +26,16 @@ Class Ssologin extends MY_Controller {
 			);
 
 		// 2012-- & the other is not allowed, redirect to index
-		if( (($userdata['angkatan'] != '2013') & ($userdata['angkatan'] != '2014') & ($userdata['angkatan'] != '2015')) | ($user->faculty != 'ILMU KOMPUTER') ) {
-			redirect(site_url());
-		}
+		// if( 
+		// 	( 
+		// 		($userdata['angkatan'] != '2013') & ($userdata['angkatan'] != '2014') & ($userdata['angkatan'] != '2015') 
+		// 	) 
+		// 	| 
+		// 	($user->faculty != 'ILMU KOMPUTER') 
+		// ) 
+		// {
+		// 	redirect(site_url());
+		// }
 
 		// re-set session
 		$this->session->unset_userdata('userdata');
