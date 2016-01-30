@@ -48,9 +48,9 @@ Class Register extends MY_Controller {
 						$this->form_validation->set_rules('phone_input', 'Phone', 'trim|required|max_length[20]');
 
 						$this->form_validation->set_rules('sig1_input', 'SIG Pilihan 1', 'trim|required|xss_clean');
-						$this->form_validation->set_rules('alasan1_input', 'Alasan SIG Pilihan 1', 'callback_description_check');
+						$this->form_validation->set_rules('alasan1_input', 'Alasan SIG Pilihan 1', 'trim|required');
 						$this->form_validation->set_rules('sig2_input', 'SIG Pilihan 2', 'trim|required|xss_clean');
-						$this->form_validation->set_rules('alasan2_input', 'Alasan SIG Pilihan 2', 'callback_description_check');
+						$this->form_validation->set_rules('alasan2_input', 'Alasan SIG Pilihan 2', 'trim|required');
 
 						$this->form_validation->set_message('required', '%s is required');
 						$this->form_validation->set_error_delimiters('<p class="text-danger">', '</p>');
