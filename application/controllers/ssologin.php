@@ -36,8 +36,9 @@ Class Ssologin extends MY_Controller {
 		// {
 		// 	redirect(site_url());
 		// }
-		$angkatan_arr = array('2013', '2014', '2015');
-		if(!(in_array($userdata['angkatan'], $angkatan_arr)) | ($user->faculty != 'ILMU KOMPUTER')) redirect(site_url());
+		$angkatan_arr = array('130', '140', '150');
+		$angkatan = substr($user->npm, 0, 2)
+		if(!(in_array($angkatan, $angkatan_arr)) | ($user->faculty != 'ILMU KOMPUTER')) redirect(site_url());
 
 		// re-set session
 		$this->session->unset_userdata('userdata');
