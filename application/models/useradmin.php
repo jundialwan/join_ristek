@@ -63,7 +63,7 @@ Class Useradmin extends CI_Model {
 
 		$totalIlkom = $this->db->query('select * from biodata where (jurusan like "Ilmu%" AND timestamp<>"NULL")')->num_rows();
 		$totalSI = $this->db->query('select * from biodata where (jurusan like "Sis%"  AND timestamp<>"NULL")')->num_rows();
-		$totalRegisterOnlyVisit = $this->db->query('select * from biodata where timestamp="NULL"')->num_rows();
+		$totalRegisterOnlyVisit = ($this->db->query('select * from biodata')->num_rows()) - ($total);
 
 		$totalCP = $this->db->query('select * from pilihan where (sig1="cp" OR sig2="cp")')->num_rows();
 		$totalCPboth = $this->db->query('select * from pilihan where (sig1="cp" AND sig2="cp")')->num_rows();
