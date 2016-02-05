@@ -7,6 +7,12 @@ Class Register extends MY_Controller {
 
 	public function index() {
 
+		// tutup pendaftaran
+		if ( (time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))) ) {
+			// registration closed
+			redirect(site_url());
+		}
+
 		if (!($this->is_logged_in())) {
 			# user not logged in
 			# redirect to ssologin

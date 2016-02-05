@@ -12,6 +12,12 @@ class Logout extends MY_Controller {
 	}
 
 	public function index() {	
+		// tutup pendaftaran
+		if ( (time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))) & !($this->biodata->isUserRegistered($user->username))) {
+			// registration closed
+			redirect(site_url());
+		}
+		
 		if (!$this->is_logged_in()) {
 			redirect(site_url());
 		} else {

@@ -120,13 +120,13 @@
 					<div class="row">			
 						<div class="col-md-12">
 							<div class="row">								
-								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 19.00wib.</p>													
+								<p class="text-center">Registrasi ditutup pada 6 Februari 2016 pkl 23.55wib.</p>													
 
 								<div class="col-md-4 col-md-offset-2 text-center ">					
 									<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block">More info</a>	
 								</div>
 								<div class="col-md-4 text-center ">
-									<?php if (time() < (strtotime('26th January 2016 19:00:00.0')-(21*60+30)) | time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))): ?>
+									<?php if ( (time() < (strtotime('26th January 2016 19:00:00.0')-(21*60+30))) | (time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))) ): ?>
 									<a href="#" class="btn btn-link btn-lg center-block disabled" role="button" disabled>SSO Login</a>	
 									<?php else: ?>
 									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-lg center-block" role="button">SSO Login</a>	

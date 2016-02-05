@@ -25,7 +25,14 @@ Class Ssologin extends MY_Controller {
 				'biohash'				=> $this->hashingBio($user->username, $user->npm)
 			);
 		
+		// hanya angkatan 2013-2015 yang diperbolehkan daftar
 		if( (($userdata['angkatan'] != '2013') & ($userdata['angkatan'] != '2014') & ($userdata['angkatan'] != '2015')) | ($user->faculty != 'ILMU KOMPUTER')) {
+			redirect(site_url());
+		}
+
+		// tutup pendaftaran
+		if ( (time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))) & !($this->biodata->isUserRegistered($user->username))) {
+			// registration closed
 			redirect(site_url());
 		}
 
