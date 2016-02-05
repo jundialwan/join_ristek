@@ -265,7 +265,7 @@
 									<div class="col-md-2">
 										<b>Sistem Informasi: </b><br><?= $stats['totalSI']?> Orang
 									</div>
-									<div class="col-md-3">
+									<div class="col-md-4">
 										<b>Pernah mengunjungi register.php tapi belum daftar: </b><br><?= $stats['totalRegisterOnlyVisit']?> Orang
 									</div>
 								</div>														

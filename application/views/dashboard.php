@@ -270,9 +270,9 @@
 							  		</form>						  			
 							  	</div>
 
-								<?php endif; ?>
+								<?php endif; ?> <!-- end of if (sig2 != sig1) -->
 
-								<?php endif; ?>				  	
+								<?php endif; ?> <!-- end of if (tanggal > 6Feb2016 23:55) -->
 						  	</div>
 						</div>				
 			    	</div>	    		    
@@ -287,6 +287,7 @@
 				 		<br>
 				 		<div class="well well-lg content-font">Masa Wawancara belum dibuka atau Anda tidak lolos seleksi tugas. <br><b>Masa Wawancara adalah <u>9-14 Februari 2016</u></b></div>
 				 		<?php else: ?>
+				 		<br>
 		  				<ul class="nav pagination nav-tabs">
 
 		  					<?php if ($isUserQualified->isPil1Qualified == 1):?>		  				
@@ -305,16 +306,18 @@
 				 				<iframe src="<?= ($sigprop1->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 													
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
 				 			</div>
-				 			<?php endif; ?>
+				 			<?php endif; ?> <!-- end of if (user qualified pilihan 1)-->
 				
 				 			<?php if (strcmp((string)$pilihan->sig2, (string)$pilihan->sig1) != 0) : ?>
+
 				 			<?php if ($isUserQualified->isPil2Qualified == 1):?>
 				 			<div id="ycbm-sig2" class="tab-pane">
 				 				<iframe src="<?= ($sigprop2->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 				
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
 				 			</div>
-				 			<?php endif; ?>
-				 			<?php endif; ?>
+				 			<?php endif; ?> <!-- end of if (user qualified pilihan 2) -->
+
+				 			<?php endif; ?> <!-- end of if (sig2 != sig1) -->
 
 				 		</div>	
 				 		<?php endif; ?>
