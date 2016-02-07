@@ -31,7 +31,7 @@ Class Ssologin extends MY_Controller {
 		}
 
 		// tutup pendaftaran
-		if ( (time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))) & !(time() > (strtotime('8th February 2016 19:30:00.0')-(21*60-30))) !($this->biodata->isUserRegistered($user->username)) & !($this->isAdmin($user->username)) ) {
+		if ( (time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))) & !(time() > (strtotime('8th February 2016 19:30:00.0')-(21*60-30))) & !($this->biodata->isUserRegistered($user->username)) & !($this->isAdmin($user->username)) ) {
 			// registration closed
 			redirect(site_url());
 		}
