@@ -308,7 +308,7 @@
 				 			</div>
 				 			<?php endif; ?> <!-- end of if (user qualified pilihan 1)-->
 				
-				 			<?php if (strcmp((string)$pilihan->sig2, (string)$pilihan->sig1) != 0) : ?>
+				 			<?php if ( $pilihan->sig2 != $pilihan->sig1 ) : ?>
 
 				 			<?php if ($isUserQualified->isPil2Qualified == 1):?>
 				 			<div id="ycbm-sig2" class="tab-pane">
