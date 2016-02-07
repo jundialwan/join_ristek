@@ -293,9 +293,13 @@
 		  					<?php if ($isUserQualified->isPil1Qualified == 1):?>		  				
 		  					<li class="active"><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1"><?= $sigprop1->linkname ?></a></li>		  						    					    		
 		  					<?php endif; ?>
+							
+							<?php if ( $pilihan->sig2 != $pilihan->sig1 ) : ?>
 
 		  					<?php if ($isUserQualified->isPil2Qualified == 1):?>
 				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2"><?= $sigprop2->linkname ?></a></li>				    				    		
+				    		<?php endif; ?>
+
 				    		<?php endif; ?>
 
 				 		</ul>
