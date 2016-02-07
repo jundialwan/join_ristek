@@ -13,7 +13,7 @@ Class Register extends MY_Controller {
 			redirect(site_url());
 		}
 
-		if (!($this->is_logged_in())) {
+		if ( !($this->is_logged_in()) ) {
 			# user not logged in
 			# redirect to ssologin
 			redirect(site_url('ssologin'));
@@ -28,7 +28,12 @@ Class Register extends MY_Controller {
 
 			// check if user registered or not
 			if (!($this->isRegistered($user['username']))) {
-				// user not registered				
+				// user not registered		
+
+				if ( (time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))) ) {
+					// registration closed
+					redirect(site_url());
+				}		
 
 				if($_SERVER['REQUEST_METHOD'] == 'POST') {
 					// check if user logged in or not
