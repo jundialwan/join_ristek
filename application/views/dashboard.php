@@ -283,7 +283,7 @@
 	  		<div class="col-md-12">
 	  			<div class="row">
 		  			<div class="col-md-12">
-				 		<?php if(time() < (strtotime('8th February 2016 19:30:00.0')-(21*60+30)) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)): ?>
+				 		<?php if( (time() < (strtotime('8th February 2016 19:30:00.0')-(21*60+30)) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)) & $user['username'] != 'jundi.ahmad'): ?>
 				 		<br>
 				 		<div class="well well-lg content-font">Masa Wawancara belum dibuka atau Anda tidak lolos seleksi tugas. <br><b>Masa Wawancara adalah <u>9-14 Februari 2016</u></b></div>
 				 		<?php else: ?>
@@ -301,7 +301,7 @@
 				 		</ul>
 				 		<div class="tab-content">
 							
-							<?php if ($isUserQualified->isPil1Qualified == 1 | $user['username'] == 'jundi.ahmad'):?>
+							<?php if ($isUserQualified->isPil1Qualified == 1):?>
 				 			<div id="ycbm-sig1" class="tab-pane in active">
 				 				<iframe src="<?= ($sigprop1->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 													
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
@@ -310,7 +310,7 @@
 				
 				 			<?php if (strcmp((string)$pilihan->sig2, (string)$pilihan->sig1) != 0) : ?>
 
-				 			<?php if ($isUserQualified->isPil2Qualified == 1 | $user['username'] == 'jundi.ahmad'):?>
+				 			<?php if ($isUserQualified->isPil2Qualified == 1):?>
 				 			<div id="ycbm-sig2" class="tab-pane">
 				 				<iframe src="<?= ($sigprop2->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 				
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
