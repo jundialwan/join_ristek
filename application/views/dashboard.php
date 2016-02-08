@@ -32,19 +32,55 @@
 	  					<p class="content-font">
 	  						Halo <b><?= $user['username'] ?></b>, terima kasih telah mendaftar sebagai calon anggota Ristek Fasilkom UI!	
 							<br><br>
-							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu <B>Pengerjaan Tugas dan Wawancara.</b> 
-							<div class="alert alert-info" role="alert">
-							<b>Masa Pengerjaan Tugas adalah <u>26 Januari - 6 Februari 2016 pkl 23:55</u>.</b>
-							</div>
-
-							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b> yang akan diumumkan pada <b><u>8 Februari 2016</u></b>.
-							Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia. <br><br>
+							Tahap pendaftaran calon anggota kini telah ditutup. Para ketua SIG telah menyeleksi tugas masing-masing pendaftar dan menetapkan para pendaftar yang lolos seleksi tugas<br> 
+							Berikut adalah hasil seleksi tugas Anda. <br><br>
 							
+							<?php if ($sigprop2->sig != $sigprop1->sig):?>
+							Pilihan 1:
+							<?php else: ?>
+							Pilihan:
+							<?php endif; ?>
+							<br>
+							
+							<?php if ($isUserQualified->isPil1Qualified == 0): ?>
+							<div class="alert alert-success" role="alert">
+								<p><?= $sigprop1->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
+							</div><br>
+							<?php else: ?>
+							<div class="alert alert-danger" role="alert">
+								<p><?= $sigprop1->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
+							</div><br>
+							<?php endif; ?>
+								
+							
+							<?php if ($sigprop2->sig != $sigprop1->sig):?>
+
+							Pilihan 2:
+							<?php if ($isUserQualified->isPil2Qualified == 0): ?>
+							<div class="alert alert-success" role="alert">
+								<p><?= $sigprop2->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
+							</div><br>
+							<?php else: ?>
+							<div class="alert alert-danger" role="alert">
+								<p><?= $sigprop2->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
+							</div><br>
+							<?php endif; ?>
+
+							<?php endif; ?>
+
+							<br>
+							Selamat bagi Anda yang lolos tahap seleksi tugas. Silakan mengisi jadwal wawancara di tab wawancara segera.<br>
+							Mohon maaf bagi Anda yang belum mendapatkan kesempatan untuk lolos ke tahap wawancara. Kami tunggu partisipasi Anda pada acara-acara Ristek selanjutnya.	
+
+							Tahap wawancara kini telah dibuka. <br>
 							<div class="alert alert-info" role="alert">
 							<b>Masa Wawancara adalah <u>9 - 14 Februari 2016</u></b>
-							</div>							
-							Selamat mengerjakan tugas :)
-							<br><br>
+							</div> 
+							
+							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b>.
+							Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia pada tab wawancara. <br><br>						
+													
+							Persiapkan diri Anda pada wawancara kali ini dengan baik. Semoga sukses! <br>
 							Ristek Fasilkom UI <br>
 							<b>#ExploringTechnology</b>
 	  					</p>	  					
@@ -86,7 +122,7 @@
 		  						<?php endif; ?>
 								
 								<?php if ($isUserQualified->isPil1Qualified == 0): ?>
-		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
+		  						<h4 class="text-danger text-center"><b>TIDAK LOLOS SELEKSI TUGAS</b></h4>
 		  						<?php else: ?>
 		  						<h4 class="text-success text-center"><b>LOLOS SELEKSI TUGAS</b></h4>
 		  						<?php endif; ?>
@@ -95,7 +131,7 @@
 		  						<span class="content-font"><b>SIG/Divisi Pilihan 2:</b></span>
 
 		  						<?php if ($isUserQualified->isPil2Qualified == 0): ?>
-		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
+		  						<h4 class="text-danger text-center"><b>TIDAK LOLOS SELEKSI TUGAS</b></h4>
 		  						<?php else: ?>
 		  						<h4 class="text-success text-center"><b>LOLOS SELEKSI TUGAS</b></h4>
 		  						<?php endif; ?>
