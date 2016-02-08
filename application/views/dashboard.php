@@ -32,7 +32,7 @@
 	  					<p class="content-font">
 	  						Halo <b><?= $user['username'] ?></b>, terima kasih telah mendaftar sebagai calon anggota Ristek Fasilkom UI!	
 							<br>
-							Tahap pendaftaran calon anggota kini telah ditutup. Para ketua SIG telah menyeleksi tugas masing-masing pendaftar dan menetapkan para pendaftar yang lolos seleksi tugas. 
+							Tahap pendaftaran calon anggota kini telah ditutup. Para ketua SIG telah menetapkan para pendaftar yang lolos seleksi tugas. 
 							Berikut adalah hasil seleksi tugas Anda. <br><br>
 							
 							<?php if ($sigprop2->sig != $sigprop1->sig):?>
@@ -42,11 +42,11 @@
 							<?php endif; ?>							
 							
 							<?php if ($isUserQualified->isPil1Qualified == 1): ?>
-							<div class="alert alert-success" role="alert">
+							<div class="alert alert-success well-sm" role="alert">
 								<p><?= $sigprop1->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
 							</div>
 							<?php else: ?>
-							<div class="alert alert-danger" role="alert">
+							<div class="alert alert-danger well-sm" role="alert">
 								<p><?= $sigprop1->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
 							</div>
 							<?php endif; ?>								
@@ -55,11 +55,11 @@
 
 							Pilihan 2:
 							<?php if ($isUserQualified->isPil2Qualified == 1): ?>
-							<div class="alert alert-success" role="alert">
+							<div class="alert alert-success well-sm" role="alert">
 								<p><?= $sigprop2->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
 							</div>
 							<?php else: ?>
-							<div class="alert alert-danger" role="alert">
+							<div class="alert alert-danger well-sm" role="alert">
 								<p><?= $sigprop2->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
 							</div>
 							<?php endif; ?>
