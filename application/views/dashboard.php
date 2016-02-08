@@ -42,37 +42,36 @@
 							<?php endif; ?>
 							<br>
 							
-							<?php if ($isUserQualified->isPil1Qualified == 0): ?>
+							<?php if ($isUserQualified->isPil1Qualified == 1): ?>
 							<div class="alert alert-success" role="alert">
 								<p><?= $sigprop1->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
-							</div><br>
+							</div>
 							<?php else: ?>
 							<div class="alert alert-danger" role="alert">
 								<p><?= $sigprop1->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
-							</div><br>
-							<?php endif; ?>
-								
+							</div>
+							<?php endif; ?>								
 							
 							<?php if ($sigprop2->sig != $sigprop1->sig):?>
 
 							Pilihan 2:
-							<?php if ($isUserQualified->isPil2Qualified == 0): ?>
+							<?php if ($isUserQualified->isPil2Qualified == 1): ?>
 							<div class="alert alert-success" role="alert">
 								<p><?= $sigprop2->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
-							</div><br>
+							</div>
 							<?php else: ?>
 							<div class="alert alert-danger" role="alert">
 								<p><?= $sigprop2->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
-							</div><br>
+							</div>
 							<?php endif; ?>
 
 							<?php endif; ?>
 
 							<br>
-							Selamat bagi Anda yang lolos tahap seleksi tugas. Silakan mengisi jadwal wawancara di tab wawancara segera.<br>
+							Selamat bagi Anda yang lolos tahap seleksi tugas. Silakan mengisi jadwal wawancara di tab wawancara segera.
 							Mohon maaf bagi Anda yang belum mendapatkan kesempatan untuk lolos ke tahap wawancara. Kami tunggu partisipasi Anda pada acara-acara Ristek selanjutnya.	
 
-							Tahap wawancara kini telah dibuka. <br>
+							Tahap wawancara kini telah dibuka. <br><br>
 							<div class="alert alert-info" role="alert">
 							<b>Masa Wawancara adalah <u>9 - 14 Februari 2016</u></b>
 							</div> 
@@ -80,7 +79,7 @@
 							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b>.
 							Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia pada tab wawancara. <br><br>						
 													
-							Persiapkan diri Anda pada wawancara kali ini dengan baik. Semoga sukses! <br>
+							Persiapkan diri Anda pada wawancara kali ini dengan baik. Semoga sukses! <br><br>
 							Ristek Fasilkom UI <br>
 							<b>#ExploringTechnology</b>
 	  					</p>	  					
