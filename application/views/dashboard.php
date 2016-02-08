@@ -31,16 +31,15 @@
 	  					<h4>Informasi</h4>
 	  					<p class="content-font">
 	  						Halo <b><?= $user['username'] ?></b>, terima kasih telah mendaftar sebagai calon anggota Ristek Fasilkom UI!	
-							<br><br>
-							Tahap pendaftaran calon anggota kini telah ditutup. Para ketua SIG telah menyeleksi tugas masing-masing pendaftar dan menetapkan para pendaftar yang lolos seleksi tugas<br> 
+							<br>
+							Tahap pendaftaran calon anggota kini telah ditutup. Para ketua SIG telah menyeleksi tugas masing-masing pendaftar dan menetapkan para pendaftar yang lolos seleksi tugas. 
 							Berikut adalah hasil seleksi tugas Anda. <br><br>
 							
 							<?php if ($sigprop2->sig != $sigprop1->sig):?>
 							Pilihan 1:
 							<?php else: ?>
 							Pilihan:
-							<?php endif; ?>
-							<br>
+							<?php endif; ?>							
 							
 							<?php if ($isUserQualified->isPil1Qualified == 1): ?>
 							<div class="alert alert-success" role="alert">
@@ -66,12 +65,11 @@
 							<?php endif; ?>
 
 							<?php endif; ?>
-
-							<br>
+							
 							Selamat bagi Anda yang lolos tahap seleksi tugas. Silakan mengisi jadwal wawancara di tab wawancara segera.
 							Mohon maaf bagi Anda yang belum mendapatkan kesempatan untuk lolos ke tahap wawancara. Kami tunggu partisipasi Anda pada acara-acara Ristek selanjutnya.	
-
-							Tahap wawancara kini telah dibuka. <br><br>
+							<br><br>
+							Tahap wawancara kini telah dibuka. <br>
 							<div class="alert alert-info" role="alert">
 							<b>Masa Wawancara adalah <u>9 - 14 Februari 2016</u></b>
 							</div> 
