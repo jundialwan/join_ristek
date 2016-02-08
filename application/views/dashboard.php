@@ -56,7 +56,7 @@
 		  					</div>
 		  					<div class="panel-body">
 		  						<?php if ($sigprop2->sig != $sigprop1->sig):?>
-		  						<div class="col-md-12 text-center">
+		  						<div class="col-md-6 text-center">
 		  							<span class="content-font">Pilihan 1</span><br><br>
 		  						<?php else: ?>
 								<div class="col-md-12 text-center">
