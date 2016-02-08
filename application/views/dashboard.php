@@ -307,7 +307,7 @@
 							
 							<?php if ($isUserQualified->isPil1Qualified == 1):?>
 				 			<div id="ycbm-sig1" class="tab-pane in active">
-				 				<iframe src="<?= ($sigprop1->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 													
+				 				<iframe src="<?= ($sigprop1->booklink).'/?noframe=true&skipHeaderFooter=false' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 													
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
 				 			</div>
 				 			<?php endif; ?> <!-- end of if (user qualified pilihan 1)-->
@@ -316,7 +316,7 @@
 
 				 			<?php if ($isUserQualified->isPil2Qualified == 1):?>
 				 			<div id="ycbm-sig2" class="tab-pane">
-				 				<iframe src="<?= ($sigprop2->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 				
+				 				<iframe src="<?= ($sigprop2->booklink).'/?noframe=true&skipHeaderFooter=false' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 				
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
 				 			</div>
 				 			<?php endif; ?> <!-- end of if (user qualified pilihan 2) -->
