@@ -34,50 +34,43 @@
 							<br>
 							Tahap pendaftaran calon anggota kini telah ditutup. Para ketua SIG telah menetapkan para pendaftar yang lolos seleksi tugas. 
 							Berikut adalah hasil seleksi tugas Anda. <br><br>
-							
-							<?php if ($sigprop2->sig != $sigprop1->sig):?>
-							Pilihan 1:
-							<?php else: ?>
-							Pilihan:
-							<?php endif; ?>							
-							
+																											
 							<?php if ($isUserQualified->isPil1Qualified == 1): ?>
 							<div class="alert alert-success well-sm" role="alert">
-								<p><?= $sigprop1->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
+								<p>1. <?= $sigprop1->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
 							</div>
 							<?php else: ?>
 							<div class="alert alert-danger well-sm" role="alert">
-								<p><?= $sigprop1->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
+								<p>1. <?= $sigprop1->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
 							</div>
 							<?php endif; ?>								
 							
 							<?php if ($sigprop2->sig != $sigprop1->sig):?>
-
-							Pilihan 2:
+							
 							<?php if ($isUserQualified->isPil2Qualified == 1): ?>
 							<div class="alert alert-success well-sm" role="alert">
-								<p><?= $sigprop2->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
+								<p>2. <?= $sigprop2->signame ?>: <b>LOLOS SELEKSI TUGAS</b></p>
 							</div>
 							<?php else: ?>
 							<div class="alert alert-danger well-sm" role="alert">
-								<p><?= $sigprop2->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
+								<p>2. <?= $sigprop2->signame ?>: <b>TIDAK LOLOS SELEKSI TUGAS</b></p>
 							</div>
 							<?php endif; ?>
 
 							<?php endif; ?>
-							
-							Selamat bagi Anda yang lolos tahap seleksi tugas. Silakan mengisi jadwal wawancara di tab wawancara segera.
-							Mohon maaf bagi Anda yang belum mendapatkan kesempatan untuk lolos ke tahap wawancara. Kami tunggu partisipasi Anda pada acara-acara Ristek selanjutnya.	
+														
 							<br><br>
-							Tahap wawancara kini telah dibuka. <br>
-							<div class="alert alert-info" role="alert">
+							Dengan berakhirnya masa pendaftaran, tahap wawancara kini telah dibuka. <br>
+							<div class="alert alert-info well-sm" role="alert">
 							<b>Masa Wawancara adalah <u>9 - 14 Februari 2016</u></b>
 							</div> 
 							
 							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b>.
 							Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia pada tab wawancara. <br><br>						
 													
-							Persiapkan diri Anda pada wawancara kali ini dengan baik. Semoga sukses! <br><br>
+							Selamat bagi Anda yang lolos tahap seleksi tugas. Silakan mengisi jadwal wawancara di tab wawancara segera.
+							Mohon maaf bagi Anda yang belum mendapatkan kesempatan untuk lolos ke tahap wawancara. Kami tunggu partisipasi Anda pada acara-acara Ristek selanjutnya.														
+							Bagi Anda yang lolos ke tahap wawancara persiapkan diri Anda pada wawancara kali ini dengan baik. Semoga sukses! <br><br>
 							Ristek Fasilkom UI <br>
 							<b>#ExploringTechnology</b>
 	  					</p>	  					
