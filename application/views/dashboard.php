@@ -67,9 +67,9 @@
 							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b>.
 							Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia pada tab wawancara. <br><br>						
 													
-							Selamat bagi Anda yang lolos tahap seleksi tugas. Silakan mengisi jadwal wawancara di tab wawancara segera.
-							Mohon maaf bagi Anda yang belum mendapatkan kesempatan untuk lolos ke tahap wawancara. Kami tunggu partisipasi Anda pada acara-acara Ristek selanjutnya.														
-							Bagi Anda yang lolos ke tahap wawancara persiapkan diri Anda pada wawancara kali ini dengan baik. Semoga sukses! <br><br>
+							Selamat bagi Anda yang lolos ke tahap wawancara. 
+							Silahkan mengisi jadwal wawancara dan persiapkan diri Anda agar dapat memberi yang terbaik. 
+							Bagi yang belum lolos, tetap semangat karena Ristek masih memiliki banyak acara seru lainnya yang bisa Anda ikuti.<br><br>
 							Ristek Fasilkom UI <br>
 							<b>#ExploringTechnology</b>
 	  					</p>	  					
