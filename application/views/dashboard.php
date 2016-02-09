@@ -310,7 +310,7 @@
 		  			<div class="col-md-12">
 				 		<?php if( (time() < (strtotime('8th February 2016 19:30:00.0')-(21*60+30)) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)) & $user['username'] != 'jundi.ahmad'): ?>
 				 		<br>
-				 		<div class="well well-lg content-font">Masa Wawancara belum dibuka atau Anda tidak lolos seleksi tugas. <br><b>Masa Wawancara adalah <u>9-14 Februari 2016</u></b></div>
+				 		<div class="well well-lg content-font">Mohon maaf. Anda tidak lolos seleksi tugas. Pendaftar hanya diperkenankan mengisi jadwal wawancara jika lolos seleksi tugas. <br>Tetap semangat karena Ristek masih memiliki banyak acara seru lainnya yang bisa Anda ikuti</div>
 				 		<?php else: ?>
 				 		
 		  				<ul class="nav pagination nav-tabs">
