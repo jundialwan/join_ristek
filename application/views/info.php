@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Open recruitment RisTek Fasilkom UI 2016 telah dibuka. Silakan login dengan akun SSO kamu.">
+		<meta name="msapplication-TileColor" content="transparent"/>
+		<meta name="msapplication-square150x150logo" content="http://ristek.cs.ui.ac.id/img/logo-blue.png"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title><?= $title ?> - Ristek Fasilkom UI</title>
