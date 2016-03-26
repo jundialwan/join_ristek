@@ -1,4 +1,4 @@
-# join_ristek
+# oprecristek2016
 Open Recruitment Website RisTek Fasilkom UI 2016
 
 SSO Login credit goes to RistekCSUI/SSO
